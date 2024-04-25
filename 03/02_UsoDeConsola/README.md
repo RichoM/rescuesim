@@ -20,6 +20,10 @@ De forma predeterminada, solo hay una consola disponible, pero puede ser útil u
 
 La forma más elemental de mostrar mensajes en la consola es usando la función “print” pasando una cadena de texto como parámetro:
 
+```python
+print("Hola mundo")
+```
+
 ![](imgs/image-2.png)
 
 [Descargar ejemplo 1 completo](ejemplo_1.py)
