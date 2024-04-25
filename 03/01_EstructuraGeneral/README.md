@@ -51,3 +51,4 @@ while robot.step(TIME_STEP) != -1:
 
 Por supuesto, este código no hace absolutamente nada más que invocar el ciclo de la simulación. Para controlar el robot de forma que tenga algún comportamiento interesante es necesario reemplazar el código dentro del “while” con la lógica que queremos darle al robot.
 
+[Descargar ejemplo completo](ejemplo_1.py)
