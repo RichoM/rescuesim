@@ -121,3 +121,13 @@ while robot.step(TIME_STEP) != -1:
 ```
 
 [Descargar ejemplo 6 completo](ejemplo_6.py)
+
+## Ejercicios
+
+Para cada ejercicio se pide armar un programa controlador distinto y entregar los archivos de código.
+
+1. Prender ambos motores a la mitad de la velocidad máxima.
+2. Avanzar una distancia determinada y luego volver a la posición inicial.
+3. Girar 90 grados en sentido horario y luego frenar.
+4. Girar 180 grados en sentido antihorario y luego frenar.
+5. Trazar un círculo con el movimiento del robot. IMPORTANTE: Usar el mundo "mapa_circulito.wbt"
