@@ -122,6 +122,7 @@ while robot.step(TIME_STEP) != -1:
 
 [Descargar ejemplo 6 completo](ejemplo_6.py)
 
+---
 ## Ejercicios
 
 Para cada ejercicio se pide armar un programa controlador distinto y entregar los archivos de código.
