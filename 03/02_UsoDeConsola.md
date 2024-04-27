@@ -1,4 +1,4 @@
-# Uso de la consola
+# 2. Uso de la consola
 
 La consola es una herramienta muy útil para mostrar información de la ejecución del programa que a veces no es directamente visible en el simulador.
 
@@ -10,11 +10,11 @@ Además de mostrar los mensajes que define el usuario en su programa controlador
 
 De forma predeterminada, la consola muestra todos los registros de Webots y las salidas del controlador. Sin embargo, la consola posee un menú contextual que permite al usuario crear un filtro para definir qué registros y salidas del controlador se quieren mostrar (opción “Filter” del menú).
 
-![](imgs/image-0.png)
+![](02_UsoDeConsola/imgs/image-0.png)
 
 De forma predeterminada, solo hay una consola disponible, pero puede ser útil usar más de una consola (especialmente cuando se filtra lo que se muestra en cada una). Se puede abrir una nueva consola desde el menú “Tools” o desde el menú contextual de una consola ya existente.
 
-![](imgs/image-1.png)
+![](02_UsoDeConsola/imgs/image-1.png)
 
 ## Ejemplo 1 - Cadena de texto
 
@@ -24,9 +24,9 @@ La forma más elemental de mostrar mensajes en la consola es usando la función 
 print("Hola mundo")
 ```
 
-![](imgs/image-2.png)
+![](02_UsoDeConsola/imgs/image-2.png)
 
-[Descargar ejemplo 1 completo](ejemplo_1.py)
+[Descargar ejemplo 1 completo](02_UsoDeConsola/ejemplo_1.py)
 
 ## Ejemplo 2 - Flujo de ejecución
 
@@ -44,9 +44,9 @@ while robot.step(TIME_STEP) != -1:
 print("Terminó la simulación")
 ```
 
-![](imgs/image-3.png)
+![](02_UsoDeConsola/imgs/image-3.png)
 
-[Descargar ejemplo 2 completo](ejemplo_2.py)
+[Descargar ejemplo 2 completo](02_UsoDeConsola/ejemplo_2.py)
 
 ## Ejemplo 3 - Variables
 
@@ -58,9 +58,9 @@ En el ejemplo siguiente se observa cómo mostrar en la consola los segundos desd
 print(robot.getTime()) # Muestro los segundos actuales en la consola
 ```
 
-![](imgs/image-4.png)
+![](02_UsoDeConsola/imgs/image-4.png)
 
-[Descargar ejemplo 3 completo](ejemplo_3.py)
+[Descargar ejemplo 3 completo](02_UsoDeConsola/ejemplo_3.py)
 
 ## Ejemplo 4 - "Formatted string"
 
@@ -75,9 +75,9 @@ while robot.step(TIME_STEP) != -1:
     print(f"Segundos de simulación: {robot.getTime()}")
 ```
 
-![](imgs/image-5.png)
+![](02_UsoDeConsola/imgs/image-5.png)
 
-[Descargar ejemplo 4 completo](ejemplo_4.py)
+[Descargar ejemplo 4 completo](02_UsoDeConsola/ejemplo_4.py)
 
 ## Ejemplo 5 - Condiciones
 
@@ -93,6 +93,6 @@ while robot.step(TIME_STEP) != -1:
         t0 = robot.getTime() # Vuelvo a iniciar el contador
 ```
 
-![](imgs/image-6.png)
+![](02_UsoDeConsola/imgs/image-6.png)
 
-[Descargar ejemplo 5 completo](ejemplo_5.py)
+[Descargar ejemplo 5 completo](02_UsoDeConsola/ejemplo_5.py)

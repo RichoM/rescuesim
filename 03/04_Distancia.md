@@ -1,4 +1,4 @@
-# Sensores de distancia
+# 4. Sensores de distancia
 
 Los sensores infrarrojos del robot sirven para medir la distancia al primer objeto en la línea de visión del sensor. Están configurados para funcionar en el rango entre 0 y 0,8 metros.
 
@@ -28,15 +28,15 @@ while robot.step(TIME_STEP) != -1:
 
 Si bien este programa no mueve el robot podemos moverlo manualmente usando los controles de webots y así observar cómo los valores registrados por el sensor van cambiando a medida que lo acercamos o alejamos de la pared.
 
-![](imgs/image-1.png)
+![](04_Distancia/imgs/image-1.png)
 
 En el robot por defecto los sensores de distancia están distribuidos alrededor del robot en posiciones predeterminadas.
 
-![](imgs/image-2.png)
+![](04_Distancia/imgs/image-2.png)
 
 Tenemos que tener en cuenta la ubicación de cada sensor para decidir cuáles habilitar e incluso, dependiendo de la estrategia elegida, podría ser útil modificar la ubicación de los sensores para tener información más precisa.
 
-[Descargar ejemplo 1 completo](ejemplo_1.py)
+[Descargar ejemplo 1 completo](04_Distancia/ejemplo_1.py)
 
 ## Ejemplo 2 - Avanzar hasta pared
 
@@ -61,15 +61,15 @@ while robot.step(TIME_STEP) != -1:
         wheelR.setVelocity(MAX_VEL)
 ```
 
-[Descargar ejemplo 2 completo](ejemplo_2.py)
+[Descargar ejemplo 2 completo](04_Distancia/ejemplo_2.py)
 
 ## Ejemplo 3 - Mantener distancia
 
 Los sensores de distancia pueden servir para programar comportamientos más interesantes. En el siguiente ejemplo podemos observar un robot que (con cierta torpeza) se mueve manteniendo la distancia con la pared izquierda. 
 
-> NOTA: Recomendamos para este ejemplo utilizar los mundos [mapa_cuadrado_1.wbt](mapa_cuadrado_1.wbt) y [mapa_cuadrado_2.wbt](mapa_cuadrado_2.wbt)
+> NOTA: Recomendamos para este ejemplo utilizar los mundos [mapa_cuadrado_1.wbt](04_Distancia/mapa_cuadrado_1.wbt) y [mapa_cuadrado_2.wbt](04_Distancia/mapa_cuadrado_2.wbt)
 
-![](imgs/image-3.png)
+![](04_Distancia/imgs/image-3.png)
 
 En este caso, los sensores que nos interesan son “ps6” y “ps5”, dado que ambos están a la izquierda del robot. Lo que hace el programa es simplemente registrar en una variable llamada “delta0” la diferencia entre los dos sensores en el primer ciclo de la simulación y luego, en los ciclos siguientes, intenta corregir el movimiento del robot de forma que la diferencia entre ambos sensores se mantenga en valores cercanos a la medición inicial. Para ello, simplemente sustrae “delta0” a la diferencia actual y usa el valor resultante para decidir hacia dónde debe moverse el robot: si el valor es positivo significa que el robot se alejó demasiado de la pared, y si es negativo significa que está demasiado cerca.
 
@@ -99,7 +99,7 @@ while robot.step(TIME_STEP) != -1:
         wheelR.setVelocity(-1.0*MAX_VEL)
 ```
 
-[Descargar ejemplo 3 completo](ejemplo_3.py)
+[Descargar ejemplo 3 completo](04_Distancia/ejemplo_3.py)
 
 ## Ejemplo 4 - Activando todos los sensores
 
@@ -120,13 +120,13 @@ while robot.step(TIME_STEP) != -1:
 
 Puede ser útil en algunos casos visualizar los rayos proyectados por cada sensor en el mapa como se puede vera continuación.
 
-![](imgs/image-4.png)
+![](04_Distancia/imgs/image-4.png)
 
 Para habilitar esta visualización debemos hacer click en el menú de webots “View” → “Optional Rendering” y habilitar la opción “Show DistanceSensor Rays”
 
-![](imgs/image-5.png)
+![](04_Distancia/imgs/image-5.png)
 
-[Descargar ejemplo 4 completo](ejemplo_4.py)
+[Descargar ejemplo 4 completo](04_Distancia/ejemplo_4.py)
 
 ---
 ## Ejercicios
@@ -135,5 +135,5 @@ Para cada ejercicio se pide armar un programa controlador distinto y entregar lo
 
 1. Leer el valor de uno de los sensores de distancia e imprimirlo por consola.
 2. Activar más de un sensor de distancia e imprimir sus valores por consola.
-3. Avanzar hasta encontrar una pared y frenar. Usar [mapa_pasillo.wbt](mapa_pasillo.wbt)
-4. Girar hasta detectar el hueco alrededor del robot. Usar [mapa_salida.wbt](mapa_salida.wbt)
+3. Avanzar hasta encontrar una pared y frenar. Usar [mapa_pasillo.wbt](04_Distancia/mapa_pasillo.wbt)
+4. Girar hasta detectar el hueco alrededor del robot. Usar [mapa_salida.wbt](04_Distancia/mapa_salida.wbt)

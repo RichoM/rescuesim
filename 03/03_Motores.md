@@ -1,4 +1,4 @@
-# Control de los motores
+# 3. Control de los motores
 
 Para controlar los motores debemos seguir los siguientes pasos:
 
@@ -39,7 +39,7 @@ while robot.step(TIME_STEP) != -1:
 
 La velocidad máxima de cada motor es 6,28 radianes/s, lo cual equivale a una vuelta completa cada segundo. Si superamos la velocidad máxima webots muestra un error en la consola, por lo cual recomendamos usar una variable global (MAX_VEL, en este caso) para guardar la velocidad máxima y poder referirnos a ella a la hora de establecer la velocidad final del motor.
 
-[Descargar ejemplo 1 completo](ejemplo_1.py)
+[Descargar ejemplo 1 completo](03_Motores/ejemplo_1.py)
 
 ## Ejemplo 2 - Avanzar
 
@@ -52,7 +52,7 @@ wheelL.setVelocity(MAX_VEL)
 wheelR.setVelocity(MAX_VEL)
 ```
 
-[Descargar ejemplo 2 completo](ejemplo_2.py)
+[Descargar ejemplo 2 completo](03_Motores/ejemplo_2.py)
 
 ## Ejemplo 3 - Retroceder
 
@@ -63,7 +63,7 @@ wheelL.setVelocity(-MAX_VEL)
 wheelR.setVelocity(-MAX_VEL)
 ```
 
-[Descargar ejemplo 3 completo](ejemplo_3.py)
+[Descargar ejemplo 3 completo](03_Motores/ejemplo_3.py)
 
 ## Ejemplo 4 - Girar a la derecha
 
@@ -76,7 +76,7 @@ wheelL.setVelocity(MAX_VEL)
 wheelR.setVelocity(-MAX_VEL)
 ```
 
-[Descargar ejemplo 4 completo](ejemplo_4.py)
+[Descargar ejemplo 4 completo](03_Motores/ejemplo_4.py)
 
 ## Ejemplo 5 - Girar a la izquierda
 
@@ -87,7 +87,7 @@ wheelL.setVelocity(-MAX_VEL)
 wheelR.setVelocity(MAX_VEL)
 ```
 
-[Descargar ejemplo 5 completo](ejemplo_5.py)
+[Descargar ejemplo 5 completo](03_Motores/ejemplo_5.py)
 
 ## Ejemplo 6 - Uso de los encoders
 
@@ -120,7 +120,7 @@ while robot.step(TIME_STEP) != -1:
     print(f"La posición del motor es {pos} radianes")
 ```
 
-[Descargar ejemplo 6 completo](ejemplo_6.py)
+[Descargar ejemplo 6 completo](03_Motores/ejemplo_6.py)
 
 ---
 ## Ejercicios

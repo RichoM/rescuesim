@@ -1,4 +1,4 @@
-# Estructura general del programa
+# 1. Estructura general del programa
 
 Para poder programar el comportamiento del robot es necesario escribir un archivo con código Python. Este archivo, llamado comúnmente “controlador”, tiene una serie de requisitos que debemos cumplir para que funcione correctamente.
 
@@ -51,4 +51,4 @@ while robot.step(TIME_STEP) != -1:
 
 Por supuesto, este código no hace absolutamente nada más que invocar el ciclo de la simulación. Para controlar el robot de forma que tenga algún comportamiento interesante es necesario reemplazar el código dentro del “while” con la lógica que queremos darle al robot.
 
-[Descargar ejemplo completo](ejemplo_1.py)
+[Descargar ejemplo completo](01_EstructuraGeneral/ejemplo_1.py)
