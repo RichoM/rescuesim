@@ -13,6 +13,9 @@ Una vez podamos usar de forma efectiva estos componentes empezaremos a desarroll
 Finalmente, aprenderemos a construir mapas personalizados para utilizar en nuestras pruebas.
 
 [1. Estructura general del programa](01_EstructuraGeneral/README.md)
+
 [2. Uso de la consola](02_UsoDeConsola/README.md)
+
 [3. Control de los motores](03_Motores/README.md)
+
 [4. Sensores de distancia](04_Distancia/README.md)
