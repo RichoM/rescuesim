@@ -110,3 +110,11 @@ Un problema con esta estrategia es que, dependiendo de la estructura del laberin
 ¿Cómo podemos modificar la estrategia para que el robot pueda explorar todo el mapa?
 
 [Descargar ejemplo completo](05_Mapa/ejemplo_1.py)
+
+---
+## Ejercicios
+
+Para cada ejercicio se pide armar un programa controlador distinto y entregar los archivos de código.
+
+1. Desarrollar un robot que recorra el mapa y estacione en la primer baldosa que encuentre rodeada por 3 paredes. Usar el mundo "[mapa_parking.wbt](05_Mapa/mapa_parking.wbt)"
+2. Desarrollar un robot que recorra todas las zonas del mapa "[mapa_noholes_1.wbt](05_Mapa/mapa_noholes_1.wbt)"
