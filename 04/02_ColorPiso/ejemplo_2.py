@@ -21,7 +21,6 @@ while robot.step(TIME_STEP) != -1:
     # Acceder al color detectado por el sensor. El canal A lo ignoramos.
     b, g, r, a = colorSensor.getImage()
 
-
     # Si llegamos a un pantano, mostramos un mensaje
     if esPantano(r, g, b):
         print(f"{robot.getTime():.2f}: Ojo! Pantano!")

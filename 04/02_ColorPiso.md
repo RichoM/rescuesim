@@ -60,10 +60,18 @@ while robot.step(TIME_STEP) != -1:
     # Acceder al color detectado por el sensor. El canal A lo ignoramos.
     b, g, r, a = colorSensor.getImage()
 
-
     # Si llegamos a un pantano, mostramos un mensaje
     if esPantano(r, g, b):
         print(f"{robot.getTime():.2f}: Ojo! Pantano!")
 ```
 
 [Descargar ejemplo 2 completo](02_ColorPiso/ejemplo_2.py)
+
+---
+
+## Ejercicios
+
+Para cada ejercicio se pide armar un programa controlador distinto y entregar los archivos de código.
+
+1. Identificar los distintos tipos de baldosa e imprimir en consola el nombre (NO los valores de RGB!)
+2. Hacer un robot que recorra el mapa [easy1.wbt](02_ColorPiso/easy1.wbt) y NO se caiga en agujeros.
