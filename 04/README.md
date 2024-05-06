@@ -2,7 +2,7 @@
 
 En esta unidad aprenderemos a utilizar algunos sensores avanzados que posee el robot, los cuales nos permitirán mejorar nuestra estrategia de navegación en el mapa.
 
-Comenzaremos por los 3 sensores que nos ofrecen información del [posicionamiento del robot](01_Posicionamiento.md): el acelerómetro, el giroscopio, y el GPS. Saber dónde está ubicado el robot y en qué dirección está mirando nos permitirá movernos en el mapa de una manera más efectiva que lo que nos permitían los [sensores de distancia](../03/04_Distancia.md).
+Comenzaremos por los 3 sensores que nos ofrecen información del [posicionamiento del robot](01_Posicionamiento.md): el acelerómetro, el giroscopio, el inertial unit, y el GPS. Saber dónde está ubicado el robot y en qué dirección está mirando nos permitirá movernos en el mapa de una manera más efectiva que lo que nos permitían los [sensores de distancia](../03/04_Distancia.md).
 
 Una vez que podamos obtener la información precisa de la ubicación y orientación del robot, pasaremos a mejorar la navegación de mapas más complejos que puedan incluir trampas como agujeros y pantanos. Para poder detectar estas trampas así como otros tipos de baldosas especiales aprenderemos a usar el [sensor de color de piso](02_ColorPiso.md).
 
