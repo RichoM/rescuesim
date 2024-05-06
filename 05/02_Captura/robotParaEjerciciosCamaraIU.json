@@ -1,0 +1,151 @@
+{
+	"Wheel 1": {
+		"dictName": "Wheel 1",
+		"name": "Wheel",
+		"customName": "ruedaD",
+		"type": "",
+		"x": 260,
+		"y": 15,
+		"z": 0,
+		"rx": 0,
+		"ry": -1,
+		"rz": 0,
+		"a": 1.57,
+		"custom": []
+	},
+	"Wheel 2": {
+		"dictName": "Wheel 2",
+		"name": "Wheel",
+		"customName": "ruedaI",
+		"type": "",
+		"x": -260,
+		"y": 15,
+		"z": 0,
+		"rx": 0,
+		"ry": -1,
+		"rz": 0,
+		"a": 1.57,
+		"custom": []
+	},
+	"Distance Sensor 1": {
+		"dictName": "Distance Sensor 1",
+		"name": "Distance Sensor",
+		"customName": "distanciaIzquierda",
+		"type": "",
+		"x": -370,
+		"y": 335,
+		"z": 0,
+		"rx": 0,
+		"ry": 0.71,
+		"rz": 0.71,
+		"a": 3.14,
+		"custom": []
+	},
+	"Distance Sensor 2": {
+		"dictName": "Distance Sensor 2",
+		"name": "Distance Sensor",
+		"customName": "distanciaFrente",
+		"type": "",
+		"x": 0,
+		"y": 335,
+		"z": -370,
+		"rx": -0.5858,
+		"ry": 0.5858,
+		"rz": 0.5858,
+		"a": 2.09,
+		"custom": []
+	},
+	"Distance Sensor 3": {
+		"dictName": "Distance Sensor 3",
+		"name": "Distance Sensor",
+		"customName": "distanciaDerecha",
+		"type": "",
+		"x": 370,
+		"y": 335,
+		"z": 0,
+		"rx": -1,
+		"ry": 0,
+		"rz": 0,
+		"a": 1.57,
+		"custom": []
+	},
+	"gps": {
+		"dictName": "gps",
+		"name": "GPS",
+		"customName": "gps",
+		"type": "add",
+		"x": 0,
+		"y": 0,
+		"z": 0,
+		"rx": -0.5858,
+		"ry": 0.5858,
+		"rz": 0.5858,
+		"a": 2.09,
+		"custom": []
+	},
+	"camera1": {
+		"dictName": "camera1",
+		"name": "Camera",
+		"customName": "camaraIzquierda",
+		"type": "add",
+		"x": -300,
+		"y": 120,
+		"z": 0,
+		"rx": 0,
+		"ry": 0.71,
+		"rz": 0.71,
+		"a": 3.14,
+		"custom": [
+			40,
+			40
+		]
+	},
+	"camera2": {
+		"dictName": "camera2",
+		"name": "Camera",
+		"customName": "camaraFrente",
+		"type": "add",
+		"x": 0,
+		"y": 120,
+		"z": -300,
+		"rx": -0.58,
+		"ry": 0.58,
+		"rz": 0.58,
+		"a": 2.09,
+		"custom": [
+			128,
+			128
+		]
+	},
+	"camera3": {
+		"dictName": "camera3",
+		"name": "Camera",
+		"customName": "camaraDerecha",
+		"type": "add",
+		"x": 300,
+		"y": 120,
+		"z": 0,
+		"rx": -1,
+		"ry": 0,
+		"rz": 0,
+		"a": 1.57,
+		"custom": [
+			40,
+			40
+		]
+	},
+	"iu": {
+		"dictName": "iu",
+		"name": "InertialUnit",
+		"customName": "inertial_unit",
+		"type": "add",
+		"x": 0,
+		"y": 0,
+		"z": 0,
+		"rx": -0.5858,
+		"ry": 0.5858,
+		"rz": 0.5858,
+		"a": 2.09,
+		"custom": []
+	}
+}
