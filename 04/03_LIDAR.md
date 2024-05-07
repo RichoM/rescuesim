@@ -24,7 +24,7 @@ La siguiente opción, un poco más sofisticada, es habilitar en el LIDAR la gene
 
 Adicionalmente, para saber cómo interpretar la información que entrega el sensor (independientemente del método elegido) necesitamos más datos. En particular, necesitamos saber la resolución horizontal (es decir, cuántos puntos de izquierda a derecha detecta el sensor) y la cantidad de capas (cuántas filas de puntos desde arriba hacia abajo). Con esta información podemos luego analizar los valores del sensor.
 
-# Ejemplo 1 - Habilitar el sensor y obtener su información básica
+## Ejemplo 1 - Habilitar el sensor y obtener su información básica
 
 Vamos a comenzar por habilitar el sensor y solicitar la información básica que necesitamos del sensor.
 
