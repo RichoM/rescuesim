@@ -19,8 +19,7 @@ lidar.enablePointCloud()
 while robot.step(TIME_STEP) != -1:
     # Obtenemos la nube de puntos
     points = lidar.getPointCloud()
-    print(points)
-
+    
     # Cada punto es un objeto con los siguientes atributos x/y/z/layer/time,
     # necesitamos transformarlos en una secuencia 
     points = [(p.x, p.y, p.z, p.layer, p.time) for p in points]
@@ -28,5 +27,5 @@ while robot.step(TIME_STEP) != -1:
     # Finalmente, escribimos el archivo
     with open(FOLDER + "/point_cloud.csv", "w", newline="") as f:
         writer = csv.writer(f)
-        writer.writerow(("x", "y", "z", "layer_id", "time"))
+        writer.writerow(("x", "y", "z", "layer", "time"))
         writer.writerows(points)
