@@ -7,11 +7,11 @@ MAX_VEL = 6.28
 
 robot = Robot()
 
-wheelL = robot.getDevice("wheel1 motor") 
-wheelL.setPosition(float("inf"))
-
-wheelR = robot.getDevice("wheel2 motor") 
+wheelR = robot.getDevice("wheel1 motor") 
 wheelR.setPosition(float("inf"))
+
+wheelL = robot.getDevice("wheel2 motor") 
+wheelL.setPosition(float("inf"))
 
 # Inicializamos la unidad de medición inercial
 inertialUnit = robot.getDevice("inertial_unit")
@@ -35,7 +35,7 @@ def updateVars():
 
     # 3) Normalizamos el valor de rotation para que se mantenga siempre entre
     # 0 y 360 grados (o el equivalente en radianes: 0 y 2*PI)
-    rotation %= math.tau # Normalizamos el valor del ángulo
+    # rotation %= math.tau # Normalizamos el valor del ángulo
 
     # OPCIONAL: Calcular el valor de rotación en grados y mostrarlo en consola
     degrees = rotation * 180/math.pi
@@ -60,8 +60,8 @@ def delay(ms):
 
 # En lugar de llamar a robot.step() llamamos a nuestra función step()
 while step() != -1:
-    wheelL.setVelocity(-0.25*MAX_VEL)
-    wheelR.setVelocity(0.25*MAX_VEL)
+    wheelL.setVelocity(-0.025*MAX_VEL)
+    wheelR.setVelocity(0.025*MAX_VEL)
     delay(500)
     wheelL.setVelocity(0)
     wheelR.setVelocity(0)
