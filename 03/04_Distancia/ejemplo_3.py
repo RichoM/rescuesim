@@ -19,11 +19,12 @@ ps6.enable(TIME_STEP)
 ps5 = robot.getDevice("ps5")
 ps5.enable(TIME_STEP)
 
-delta0 = None # Declaramos la variable delta0
+robot.step(TIME_STEP) # Ejecuto el simulador una vez para que tomen valores iniciales los sensores
+
+delta0 = ps6.getValue() - ps5.getValue()
+
 
 while robot.step(TIME_STEP) != -1:
-    if delta0 == None: # Sólo en el primer ciclo, inicializamos delta0
-        delta0 = ps6.getValue() - ps5.getValue()
     
     # Calculamos la diferencia con la medición inicial
     giro = (ps6.getValue() - ps5.getValue()) - delta0
