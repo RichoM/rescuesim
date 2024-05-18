@@ -26,7 +26,7 @@ Para obtener el rectángulo donde está el cartel, vamos a usar el siguiente mé
     approx=cv2.minAreaRect(contornos[0])
 ```
 
-**minAreaRect** nos devuelve el rectángulo más grande que tenga dentro el contorno pasado como parámetro. De esta manera, aunque el contorno tenga varios puntos, obtenemos un rectángulo preciso. El método nos devuelve la siguiente tupla:
+**minAreaRect** nos devuelve el rectángulo más chico que tenga dentro el contorno pasado como parámetro. De esta manera, aunque el contorno tenga varios puntos, obtenemos un rectángulo preciso. El método nos devuelve la siguiente tupla:
 
 
 **( (x del centro, y del centro), (ancho, alto), ángulo del rectángulo)**

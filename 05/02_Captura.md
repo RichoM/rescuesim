@@ -21,7 +21,7 @@ Como podemos ver, se llaman distanciaIzquierda, distanciaFrente y distanciaDerec
 
 A partir de ahora, vamos a utilizar el mundo **Camara.wbt**. Lo vamos a encontrar en la carpeta World de nuestro set de archivos. Recordar copiar el mundo dentro de game/worlds para que podamos abrirlo.
 
-Ahora vamos a implementar un recorrido siguiendo la pared izquierda, pero con movimientos por baldosa. Podemos verlo en el archivo recorrePorBaldosa.py. Si ejecutamos este controlador, podemos ver arriba del mundo, a la izquierda, un cuadro con lo que ve una de las cámaras (la imagen más grande es la de la cámara que está de frente).
+Ahora vamos a implementar un recorrido siguiendo la pared izquierda, pero con movimientos por baldosa. Podemos verlo en el archivo ContRecorrePorBaldosaIU.py. Si ejecutamos este controlador, podemos ver arriba del mundo, a la izquierda, un cuadro con lo que ve una de las cámaras (la imagen más grande es la de la cámara que está de frente).
 
 ![Imagen 4](02_Captura/imgs/img04.png)
 
