@@ -26,6 +26,15 @@ class Robot:
         self.gps = self.robot.getDevice("gps")
         self.gps.enable(TIME_STEP)
 
+        self.colorSensor = self.robot.getDevice("colour_sensor")
+        self.colorSensor.enable(TIME_STEP)
+
+        self.camI = self.robot.getDevice("camaraIzquierda")
+        self.camI.enable(TIME_STEP)
+
+        self.camD = self.robot.getDevice("camaraDerecha")
+        self.camD.enable(TIME_STEP)
+
         self.imageProcessor = ImageProcessor()
 
         self.position = None
