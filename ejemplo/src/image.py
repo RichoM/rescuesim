@@ -1,4 +1,4 @@
 
 class ImageProcessor:
-    def analize(self, image):
+    def analyze(self, image):
         return None # TODO: Completar...
