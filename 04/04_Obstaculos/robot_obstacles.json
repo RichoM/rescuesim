@@ -1,0 +1,93 @@
+{
+	"Wheel 1": {
+		"dictName": "Wheel 1",
+		"name": "Wheel",
+		"customName": "wheel2",
+		"type": "",
+		"x": 260,
+		"y": 15,
+		"z": 0,
+		"rx": 0,
+		"ry": 0,
+		"rz": -1,
+		"a": 1.57
+	},
+	"Wheel 2": {
+		"dictName": "Wheel 2",
+		"name": "Wheel",
+		"customName": "wheel1",
+		"type": "",
+		"x": -260,
+		"y": 15,
+		"z": 0,
+		"rx": 0,
+		"ry": 0,
+		"rz": -1,
+		"a": 1.57
+	},
+	"Distance Sensor 1": {
+		"dictName": "Distance Sensor 1",
+		"name": "Distance Sensor",
+		"customName": "i0",
+		"type": "",
+		"x": 224,
+		"y": 370,
+		"z": -276,
+		"rx": 0,
+		"ry": 1,
+		"rz": 0,
+		"a": 0.78
+	},
+	"Distance Sensor 2": {
+		"dictName": "Distance Sensor 2",
+		"name": "Distance Sensor",
+		"customName": "i1",
+		"type": "",
+		"x": 105,
+		"y": 370,
+		"z": -360,
+		"rx": 0,
+		"ry": 1,
+		"rz": 0,
+		"a": 1.37
+	},
+	"Distance Sensor 3": {
+		"dictName": "Distance Sensor 3",
+		"name": "Distance Sensor",
+		"customName": "i2",
+		"type": "",
+		"x": 0,
+		"y": 370,
+		"z": -370,
+		"rx": 0,
+		"ry": 1,
+		"rz": 0,
+		"a": 1.57
+	},
+	"Distance Sensor 4": {
+		"dictName": "Distance Sensor 4",
+		"name": "Distance Sensor",
+		"customName": "i3",
+		"type": "",
+		"x": -105,
+		"y": 370,
+		"z": -360,
+		"rx": 0,
+		"ry": 1,
+		"rz": 0,
+		"a": 1.76
+	},
+	"Distance Sensor 5": {
+		"dictName": "Distance Sensor 5",
+		"name": "Distance Sensor",
+		"customName": "i4",
+		"type": "",
+		"x": -224,
+		"y": 370,
+		"z": -276,
+		"rx": 0,
+		"ry": 1,
+		"rz": 0,
+		"a": 2.35
+	}
+}
