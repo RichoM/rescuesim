@@ -54,7 +54,7 @@ class Robot:
         self.updatePosition()
         self.updateRotation()
         self.updateRangeImage()
-        print(f"Position: {self.position}, Rotation: {self.rotation:.3f} rad ({self.rotation*180/math.pi:.3f} deg)")
+        #print(f"Position: {self.position}, Rotation: {self.rotation:.3f} rad ({self.rotation*180/math.pi:.3f} deg)")
     
     def updatePosition(self):
         x, _, y = self.gps.getValues()
@@ -66,6 +66,12 @@ class Robot:
 
     def updateRangeImage(self):
         self.rangeImage = self.lidar.getRangeImage()[1024:1536]
+
+    def delay(self, ms):
+        initTime = self.robot.getTime()
+        while self.step() != -1:
+            if (self.robot.getTime() - initTime) * 1000.0 > ms:
+                break
     
     def girar(self, rad):
         lastRot = self.rotation
