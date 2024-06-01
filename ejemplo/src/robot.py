@@ -40,6 +40,7 @@ class Robot:
         self.position = None
         self.rotation = 0
         self.rangeImage = None
+        self.baldosasVisitadas = []
 
         self.wheelL.setVelocity(0)
         self.wheelR.setVelocity(0)
